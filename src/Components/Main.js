@@ -1,44 +1,11 @@
 import { Card, Col, Row } from 'antd'
 import React from 'react'
+import { previousChats, recentChats } from '../constants'
 import Info from './Info'
 import Options from './Options'
 import User from './User'
 
 const Main = () => {
-    const recentChats = [
-        {
-            label: "Brendan Lim",
-            key: "brendan-lim"
-        },
-        {
-            label: "Eric Hoffman",
-            key: "eric-hoffman"
-        },
-        {
-            label: "Grace Ng",
-            key: "grace-ng"
-        },
-        {
-            label: "Kerem Suer",
-            key: "kerem-suer"
-        },
-        {
-            label: "Raquel Parrado",
-            key: "raquel-parrado"
-        }
-    ]
-
-    const previousChats = [
-        {
-            label: "Brendan Lim",
-            key: "brendan-lim"
-        },
-        {
-            label: "Eric Hoffman",
-            key: "eric-hoffman"
-        }
-    ]
-
     return (
         <>
             <h3>Lists</h3>

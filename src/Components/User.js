@@ -8,7 +8,7 @@ const User = (props) => {
     <Row justify='space-evenly' style={{marginBottom:"12px"}} gutter={[16,16]}>
       <Col span={22}>
         <Meta
-          avatar={< Avatar src="https://joeschmoe.io/api/v1/random" />}
+          avatar={< Avatar className='avatar' src="https://joeschmoe.io/api/v1/random" />}
           title={props.user.label}
           key={props.user.key}
         />

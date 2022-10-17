@@ -2,18 +2,84 @@ li {
   list-style: none;
 }
 
-.App {
-  text-align: center;
+.header {
+  background-color: #3ccff0;
+  min-height: 2vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: calc(6px + 2vmin);
+  color: white;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header .logo-title .nav-title {
+  color: white;
+  text-decoration: none;
+  font-size: xx-large;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+.title:hover {
+  color: white;
+}
 
-.App-link {
-  color: #61dafb;
+.header .logo-title .logo {
+  padding: 0 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  color: grey;
+  text-decoration: none;
+}
+
+.logo:hover {
+  color: gray;
+}
+
+.logo-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .menu .nav-link {
+  transition: 0.7s ease;
+  color: white;
+  height: 1px;
+  text-decoration: none;
+  margin-bottom: 15px;
+  border-color: solid red;
+}
+
+.header .menu .nav-link:hover {
+  color: #FDB750;
+}
+
+.sub-title {
+  color: grey;
+  font-size: 16px;
+  font-style: italic;
+}
+
+.navbar {
+  background-color: #3ccff0;
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
 }
 
 #components-layout-demo-top-side-2 .logo {
@@ -33,54 +99,6 @@ li {
   background: #fff;
 }
 
-.header {
-  background-color: #3ccff0;
-  min-height: 2vh;
-  overflow: hidden;
-  /* flex-direction: row; */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: calc(6px + 2vmin);
-  color: white;
-}
-
-
-.menu-item {
-  color: white !important;
-}
-
-.title {
-  color: white;
-  text-decoration: none !important;
-  /* margin-left: 10px; */
-  font-size: xx-large;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-.title:hover {
-  color: white;
-}
-
-.logo {
-  padding: 0 10px;
-  margin-right: 10px;
-  margin-top: 10px;
-  color: grey;
-  text-decoration: none !important;
-
-}
-
-.logo:hover {
-  color: gray;
-}
-
-.subtitle {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .site-card-border-less-wrapper {
   padding: 30px;
 }
@@ -92,30 +110,6 @@ li {
 
 .ant-card-body {
   padding: 10px 15px 20px 20px !important;
-  /* padding-bottom: 20px !important ; */
-}
-
-
-.nav-link {
-  transition: 0.7s ease !important;
-  color: white !important;
-  height: 1px;
-  text-decoration: none !important;
-  margin-bottom: 15px;
-  border-color: solid red;
-
-}
-
-.nav-link:hover {
-  color: #FDB750 !important;
-
-}
-
-
-.sub-title {
-  color: grey;
-  font-size: 16px;
-  font-style: italic;
 }
 
 .ant-card-head {
@@ -123,57 +117,47 @@ li {
   min-height: 20px !important;
 }
 
-
-.navbar {
-  background-color: #3ccff0;
-  min-height: 70px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 24px;
-}
-
-.menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 60px;
-}
-
-.nav-logo {
-  color: rgba(255, 255, 255, 0.3) !important;
-}
-
-.hamburger {
+.ant-typography.ant-dropdown-trigger {
   display: none;
-  cursor: pointer;
 }
 
-.bar {
-  display: block;
-  width: 25px;
-  height: 3px;
-  margin: 5px 5px 5px 5px   ;
-
-  /* margin: 5px auto; */
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  background-color: white;
+.ant-btn.ant-btn-ghost.ant-btn-icon-only.ant-btn-background-ghost {
+  border: none;
+  margin-left: 10px;
 }
 
-
-@media(max-width: 1040px){
-  .hamburger{
+@media(max-width: 1040px) {
+  .hamburger {
     display: block;
   }
-  
-  .title{
+
+  .nav-title {
     display: none;
   }
-  .menu{
+
+  .menu {
     display: none;
   }
-  .ant-layout-sider.ant-layout-sider-dark.site-layout-background{
+
+  .ant-drawer-title .drawer-title {
+    color: gray;
+    font-size: xx-large;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+  }
+
+  .ant-layout-sider.ant-layout-sider-dark.site-layout-background {
     display: none !important;
+  }
+
+  .ant-typography.ant-dropdown-trigger {
+    display: block;
+    font-size: x-large;
+    margin-right: 10px;
+  }
+
+  .ant-card-meta-avatar {
+    display: none;
   }
 }

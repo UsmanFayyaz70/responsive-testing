@@ -1,57 +1,8 @@
 import { Menu } from 'antd'
 import React from 'react'
+import { sideItems } from '../constants'
 
 const Sidebar = () => {
-    const sideItems = [
-        {
-          label: "Appbar",
-          key: "appbar"
-        },
-        {
-          label: "Avatars",
-          key: "avatars"
-        },
-        {
-          label: "Buttons",
-          key: "buttons"
-        },
-        {
-          label: "Cards",
-          key: "cards"
-        },
-        {
-          label: "Date picker",
-          key: "date-picker"
-        },
-        {
-          label: "Dialog",
-          key: "dialog"
-        },
-        {
-          label: "Dropdown Menu",
-          key: "dropdown-menu"
-        },
-        {
-          label: "Icons",
-          key: "icons"
-        },
-        {
-          label: "Icon Buttons",
-          key: "icon-buttons"
-        },
-        {
-          label: "Icon Menus",
-          key: "icon-menus"
-        },
-        {
-          label: "Left Nav",
-          key: "left-nav"
-        },
-        {
-          label: "Lists",
-          key: "lists"
-        }
-      ]
       
   return (
     <Menu

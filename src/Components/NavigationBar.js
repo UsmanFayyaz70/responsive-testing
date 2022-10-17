@@ -1,48 +1,35 @@
 import React from 'react'
-import { BsGithub } from 'react-icons/bs'
 import { SiMaterialui } from 'react-icons/si'
+import { Anchor } from 'antd';
+import HamburgerMenu from './HamburgerMenu';
+import DropdownMenu from './DropdownMenu';
+import { navLinks } from '../constants';
 
 const NavigationBar = () => {
-    const navLinks = [
-        {
-            label: "Getting Started",
-            key: "getting-started"
-        },
-        {
-            label: "Customization",
-            key: "customization"
-        },
-        {
-            label: "Components",
-            key: "components"
-        },
-        {
-            label: (<BsGithub />),
-            key: "git-icon"
-        }
-    ]
+
     return (
-        <nav className='header'>
-            <div className='hamburger'>
-                <span className='bar'></span>
-                <span className='bar'></span>
-                <span className='bar'></span>
-            </div>
-            <div className='subtitle'>
-            <a href='#' className='logo'><SiMaterialui size={40} /></a>
-            <span></span>
-            <a href='#' className="title">Material UI</a>
-            </div>
-            <ul className='menu'>
-                {navLinks.map((navLink) => {
-                    return (
-                        <li>
-                            <a href="#" className='nav-link' key={navLink.key}> {navLink.label} </a>
-                        </li>
-                    )
-                })}
-            </ul>
-        </nav >
+        <Anchor>
+            <nav className='header'>
+                <div className='hamburger'>
+                    <HamburgerMenu />
+                </div>
+                <div className='logo-title'>
+                    <DropdownMenu />
+                    <a href='#' className='logo'><SiMaterialui size={40} /></a>
+                    <span></span>
+                    <a href='#' className="nav-title">Material UI</a>
+                </div>
+                <ul className='menu'>
+                    {navLinks.map((navLink) => {
+                        return (
+                            <li>
+                                <a href="#" className='nav-link' key={navLink.key}> {navLink.label} </a>
+                            </li>
+                        )
+                    })}
+                </ul>
+            </nav >
+        </Anchor>
     )
 }
 

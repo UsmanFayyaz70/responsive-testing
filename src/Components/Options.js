@@ -29,16 +29,16 @@ const Options = () => {
                     <Col lg={4} sm={4} xs={6} xl={2} md={2}>
                         < AiOutlineSend />
                     </Col>
-                    <Col lg={20} sm={20} xs={16} xl={22} md={22}>
+                    <Col lg={20} sm={20} xs={18} xl={22} md={22}>
                         <p>Sent Mail</p>
                     </Col>
                 </Row>
 
                 <Row gutter={16} justify='space-around'>
-                    <Col lg={4} sm={4} xs={8} xl={2} md={2}>
+                    <Col lg={4} sm={4} xs={6} xl={2} md={2}>
                         < BsEnvelopeOpen />
                     </Col>
-                    <Col lg={20} sm={20} xs={16} xl={22} md={22}>
+                    <Col lg={20} sm={20} xs={18} xl={22} md={22}>
                         <p> Drafts</p>
                     </Col>
                 </Row>

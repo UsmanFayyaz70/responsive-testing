@@ -5,11 +5,11 @@ import NavigationBar from "./Components/NavigationBar";
 import Sidebar from "./Components/Sidebar";
 import Main from "./Components/Main";
 
-const { Header, Content, Sider } = Layout;
+const { Content, Sider } = Layout;
 
 const App = () => (
   <Layout>
-      <NavigationBar />
+    <NavigationBar />
     <Layout>
       <Sider width={200} className="site-layout-background">
         <Sidebar />
