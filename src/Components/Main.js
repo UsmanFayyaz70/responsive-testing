@@ -43,9 +43,9 @@ const Main = () => {
         <>
             <h3>Lists</h3>
             <Card bordered={true} style={{ width: "75%", height: "auto" }}>
-                <Row justify="space-around">
+                <Row justify="space-between">
                     <Col span={24}>
-                        <Row justify="space-around">
+                        <Row justify="space-between">
                             <Col lg={12} sm={24} xs={24} xl={12} md={24}>
                                 <Card style={{ width: "75%", height: "85%" }}>
                                     <Options />
@@ -67,7 +67,7 @@ const Main = () => {
                             </Col>
                         </Row>
 
-                        <Row justify="space-around">
+                        <Row justify="space-between">
                             <Col lg={12} sm={24} xs={24} xl={12} md={24}>
                                 <Card style={{ width: "75%", height: "85%" }}>
                                     <Info />

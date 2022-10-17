@@ -3,7 +3,7 @@ import { BsGithub } from 'react-icons/bs'
 import { SiMaterialui } from 'react-icons/si'
 
 const NavigationBar = () => {
-    const items1 = [
+    const navLinks = [
         {
             label: "Getting Started",
             key: "getting-started"
@@ -23,13 +23,21 @@ const NavigationBar = () => {
     ]
     return (
         <nav className='header'>
+            <div className='hamburger'>
+                <span className='bar'></span>
+                <span className='bar'></span>
+                <span className='bar'></span>
+            </div>
+            <div className='subtitle'>
             <a href='#' className='logo'><SiMaterialui size={40} /></a>
+            <span></span>
             <a href='#' className="title">Material UI</a>
+            </div>
             <ul className='menu'>
-                {items1.map((item) => {
+                {navLinks.map((navLink) => {
                     return (
                         <li>
-                            <a href="#" className='nav-link' key={item.key}> {item.label} </a>
+                            <a href="#" className='nav-link' key={navLink.key}> {navLink.label} </a>
                         </li>
                     )
                 })}

@@ -2,7 +2,7 @@ import { Menu } from 'antd'
 import React from 'react'
 
 const Sidebar = () => {
-    const items2 = [
+    const sideItems = [
         {
           label: "Appbar",
           key: "appbar"
@@ -60,7 +60,8 @@ const Sidebar = () => {
       height: '100%',
       borderRight: 0,
     }}
-    items={items2}
+    items={sideItems}
+    className = "sidebar"
   />
   )
 }
