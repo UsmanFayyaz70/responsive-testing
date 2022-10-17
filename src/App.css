@@ -3,7 +3,7 @@ li {
 }
 
 .header {
-  background-color: #3ccff0;
+  background-color: #32b4d2;
   min-height: 2vh;
   overflow: hidden;
   display: flex;
@@ -20,20 +20,18 @@ li {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-.title:hover {
-  color: white;
-}
-
 .header .logo-title .logo {
   padding: 0 10px;
   margin-right: 10px;
   margin-top: 10px;
-  color: grey;
+  color: white;
   text-decoration: none;
+  transition: transform 0.7s;
 }
 
 .logo:hover {
   color: gray;
+  transform: rotate(360deg);
 }
 
 .logo-title {
@@ -48,7 +46,6 @@ li {
   height: 1px;
   text-decoration: none;
   margin-bottom: 15px;
-  border-color: solid red;
 }
 
 .header .menu .nav-link:hover {
@@ -59,15 +56,6 @@ li {
   color: grey;
   font-size: 16px;
   font-style: italic;
-}
-
-.navbar {
-  background-color: #3ccff0;
-  min-height: 70px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 24px;
 }
 
 .menu {
@@ -124,6 +112,15 @@ li {
 .ant-btn.ant-btn-ghost.ant-btn-icon-only.ant-btn-background-ghost {
   border: none;
   margin-left: 10px;
+}
+
+.ant-menu-title-content {
+  transition: all 0.7s ease;
+}
+
+.ant-menu-title-content:hover {
+  background-color: aliceblue;
+  color: black;
 }
 
 @media(max-width: 1040px) {

@@ -3,7 +3,7 @@ import "./App.css";
 import { Layout } from 'antd';
 import NavigationBar from "./Components/NavigationBar";
 import Sidebar from "./Components/Sidebar";
-import Main from "./Components/Main";
+import Main from "./Screens/Home";
 
 const { Content, Sider } = Layout;
 

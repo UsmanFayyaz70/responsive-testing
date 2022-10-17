@@ -1,9 +1,9 @@
 import { Card, Col, Row } from 'antd'
 import React from 'react'
-import { previousChats, recentChats } from '../constants'
-import Info from './Info'
-import Options from './Options'
-import User from './User'
+import { previousChats, recentChats } from '../../constants'
+import Info from '../../Components/Info'
+import Options from '../../Components/Options'
+import User from '../../Components/User'
 
 const Main = () => {
     return (
@@ -63,3 +63,4 @@ const Main = () => {
 }
 
 export default Main
+

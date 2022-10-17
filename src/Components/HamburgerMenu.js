@@ -5,12 +5,8 @@ import { GiHamburgerMenu } from 'react-icons/gi'
 
 const HamburgerMenu = () => {
     const [open, setOpen] = useState(false);
-    const showDrawer = () => {
-        setOpen(true);
-    };
-    const onClose = () => {
-        setOpen(false);
-    };
+    const showDrawer = () => setOpen(true);
+    const onClose = () => setOpen(false);
     return (
         <>
             <Space>

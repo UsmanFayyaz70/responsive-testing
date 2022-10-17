@@ -7,14 +7,18 @@ const Sidebar = () => {
   return (
     <Menu
     mode="inline"
-    style={{
-      height: '100%',
-      borderRight: 0,
-    }}
+    style={styles.sideBar}
     items={sideItems}
     className = "sidebar"
   />
   )
+}
+
+const styles = {
+  sideBar: {
+    height: '100%',
+    borderRight: 0,
+  }
 }
 
 export default Sidebar
