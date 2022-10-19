@@ -26,4 +26,4 @@ const HamburgerMenu = () => {
     )
 }
 
-export default HamburgerMenu
+export default HamburgerMenu;

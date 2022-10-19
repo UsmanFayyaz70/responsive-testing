@@ -1,8 +1,8 @@
 import React from 'react'
 import { SiMaterialui } from 'react-icons/si'
 import { Anchor } from 'antd';
-import HamburgerMenu from './index';
-import DropdownMenu from './index';
+import HamburgerMenu from './HamburgerMenu'
+import DropdownMenu from './DropdownMenu'
 import { navLinks } from '../constants';
 
 const NavigationBar = () => {
